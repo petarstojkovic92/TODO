@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="container d-flex justify-content-center align-items-center flex-grow-1 py-4" data-bs-theme="dark">
+    <div class="card" style="width: 28rem;">
+        <div class="card-body">
+            <h5 class="card-title text-center">Create your to-do list below</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary text-center">Card subtitle</h6>
+            <form method="POST">
+                <div class="input-group mb-3">
+                    <button class="btn btn-outline-secondary" type="submit" id="button-addon1">Create the list</button>
+                    <input name="title" type="text" class="form-control" placeholder="Enter your task here *" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
